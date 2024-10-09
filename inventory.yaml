@@ -1,17 +1,11 @@
-all:
-  children:
-    web_servers:
-      hosts:
-        192.168.56.117:
-          hostname: server2
-          
-    db_servers:
-      hosts:
-        192.168.56.119:
-          hostname: centos
-          
-    file_servers:
-      hosts:
-        192.168.56.114:
-          hostname: server1
-          ansible_user: qjltbarquilla
+[web_servers]
+192.168.56.117
+
+[db_servers]
+192.168.56.119
+
+[file_servers]
+192.168.56.114
+
+[workstations]
+192.168.56.117
